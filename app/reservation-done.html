@@ -1,0 +1,61 @@
+---
+title: 瑜珈|預約成功|DOYOGA
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- Reservation進度條 取消pointer-->
+<section>
+    <div class="text-template text-center pt-12 pt-md-16 mb-6 mb-md-4">
+        <h2>立即預約</h2>
+    </div>
+    <div class="progess text-center mb-8 mb-md-6 mb-lg-8">
+        <button class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">選擇方案</button>
+        <button class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">填寫資料</button>
+        <button class="text-white btn btn-secondary-dark rounded-3 rounded-3 px-5 py-3 px-md-3 px-lg-12">完成預約</button>
+    </div>
+</section>
+<!-- 完成預約資訊 -->
+<section>
+    <div class="text-center text-secondary-dark mb-8">
+        <i class="far fa-check-circle fs-1 mb-4 mb-md-5"></i>
+        <h3>已完成預約，以下是您的預約資訊:</h3>
+    </div>
+    <!-- 手風琴 -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="accordion border-primary col-12 col-md-8 col-lg-6 mb-6" id="reservation">
+                <div class="accordion-item">
+                  <h2 class="accordion-header rounded-top" id="headingOne">
+                    <button class="accordion-button text-white bg-secondary-dark" type="button" data-bs-toggle="collapse" data-bs-target="#reservation-info" aria-expanded="true" aria-controls="reservation-info">
+                        預約資訊
+                    </button>
+                  </h2>
+                  <div id="reservation-info" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#reservation">
+                    <div class="accordion-body text-secondary-dark">
+                        <h3 class="text-primary mb-4 fw-bolder"><span class="fs-4 text-secondary-dark me-2">您預約的是</span>首次體驗課程-基礎</h3>
+                        <ul>
+                            <li class="mb-2">上課預約報到日：2021/07/21</li>
+                            <li class="mb-2">預約人：Joanne Chen</li>
+                            <li class="mb-2">年齡：18 歲</li>
+                            <li class="mb-2">性別：女</li>
+                            <li class="mb-2">電子信箱：example123@gmail.com</li>
+                            <li class="mb-2">手機號碼：0912-345-678</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="text-secondary-dark mb-8">
+                    <h3 class="text-center mb-2">上課注意事項</h3>
+                    <p>第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+                </div>
+                <a href="./index.html" class="btn btn-primary text-white fs-3 w-100 mb-22 mb-md-20 mb-lg-26">返回首頁</a>
+            </div>
+        </div>
+    </div>
+</section>

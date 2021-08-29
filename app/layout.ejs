@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <h1><a class="navbar-brand bg bg-logo bg-contain text-replace" href="./index.html">DOYOGA</a></h1>
+        <!-- <h1><a class="navbar-brand"></a><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA-logo.png" alt=""></h1> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#">課程介紹</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">基礎 Basic</a></li>
+                <li><a class="dropdown-item" href="#">艾揚格 Iyengar</a></li>
+                <li><a class="dropdown-item" href="#">哈達 Hatha</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="./surroundings.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                瑜珈空間
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">團體課教室</a></li>
+                <li><a class="dropdown-item" href="#">個人訓練室</a></li>
+                <li><a class="dropdown-item" href="#">淋浴間</a></li>
+                <li><a class="dropdown-item" href="#">器材出租</a></li>
+                <li><a class="dropdown-item" href="#">交誼廳</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">當月課表</a>
+            </li>
+          </ul>
+          <div class="d-lg-flex d-none">
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-4">立即預約</a>
+            <a href="" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3">聯絡我們</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <%- contents %>
+
+    <footer class="footer bg-secondary-dark p-8">
+      <div class="container d-lg-flex justify-content-lg-between">
+        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group w-100 w-md-50 w-lg-40">
+          <input type="email" class="form-control fs-3" placeholder="輸入您的電子信箱" aria-label="enter useremail" aria-describedby="footer-input-btn">
+          <button class="btn btn-primary fs-3 text-white" type="button" id="footer-input-btn">訂閱</button>
+        </div>
+      </div>
+      <hr class="my-8">
+      <div class="container">
+        <div class="footer-link d-flex justify-content-between mb-2">
+          <p class="h2 fz-24"><a href="./index.html" class="bg bg-footer-link-logo bg-contain text-replace ">DOYOGA</a></p>
+          <ul class="footer-link-list d-flex text-white">
+            <li><a href="https://www.facebook.com/" class="text-white btn-hover-opacity pe-2"><i class="fab fa-facebook fs-24"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="text-white btn-hover-opacity pe-2"><i class="fab fa-instagram fs-24"></i></a></li>
+            <li><a href="https://line.me/zh-hant/" class="text-white btn-hover-opacity"><i class="fab fa-line fs-24"></i></a></li>
+          </ul>
+        </div>
+        <ul class="footer-menu">
+          <li><a href=""  class="text-white d-inline-block btn-hover-opacity mb-2">課程介紹</a></li>
+          <li><a href="./surroundings.html"  class="text-white d-inline-block btn-hover-opacity mb-2">瑜珈空間</a></li>
+          <li><a href=""  class="text-white d-inline-block btn-hover-opacity mb-2">當月課表</a></li>
+        </ul>
+        <p class="text-md-center text-white">© 2021. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

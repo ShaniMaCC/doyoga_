@@ -1,0 +1,26 @@
+//圖片取代文字
+.text-replace{
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+//版型設置 h2:深藕色 + h3:淺藕色+取消heading mb4
+.text-template{
+    h2{
+        color: $secondary-dark;
+        font-weight: bolder;
+    }
+    h3{
+        color: $primary;
+        margin-bottom: 0;
+    }
+}
+.list-style-num{
+    list-style: decimal !important;
+}
+.list-style-disc{
+    list-style: disc !important;
+}
+.jq-level-active{
+    display: inline-block !important;
+}
