@@ -5878,6 +5878,9 @@ textarea.form-control-lg {
 .top-0 {
   top: 0 !important; }
 
+.top-10 {
+  top: 10% !important; }
+
 .top-25 {
   top: 25% !important; }
 
@@ -5889,6 +5892,9 @@ textarea.form-control-lg {
 
 .bottom-0 {
   bottom: 0 !important; }
+
+.bottom-10 {
+  bottom: 10% !important; }
 
 .bottom-25 {
   bottom: 25% !important; }
@@ -5902,6 +5908,9 @@ textarea.form-control-lg {
 .start-0 {
   left: 0 !important; }
 
+.start-10 {
+  left: 10% !important; }
+
 .start-25 {
   left: 25% !important; }
 
@@ -5913,6 +5922,9 @@ textarea.form-control-lg {
 
 .end-0 {
   right: 0 !important; }
+
+.end-10 {
+  right: 10% !important; }
 
 .end-25 {
   right: 25% !important; }
