@@ -40,24 +40,24 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="./surroundings.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 瑜珈空間
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">團體課教室</a></li>
-                <li><a class="dropdown-item" href="#">個人訓練室</a></li>
-                <li><a class="dropdown-item" href="#">淋浴間</a></li>
-                <li><a class="dropdown-item" href="#">器材出租</a></li>
-                <li><a class="dropdown-item" href="#">交誼廳</a></li>
+                <li><a class="dropdown-item" href="./surroundings.html">團體課教室</a></li>
+                <li><a class="dropdown-item" href="./surroundings.html">個人訓練室</a></li>
+                <li><a class="dropdown-item" href="./surroundings.html">淋浴間</a></li>
+                <li><a class="dropdown-item" href="./surroundings.html">器材出租</a></li>
+                <li><a class="dropdown-item" href="./surroundings.html">交誼廳</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">當月課表</a>
+              <a class="nav-link" href="./curriculum.html">當月課表</a>
             </li>
           </ul>
           <div class="d-lg-flex d-none">
             <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-4">立即預約</a>
-            <a href="" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3">聯絡我們</a>
+            <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3">聯絡我們</a>
           </div>
         </div>
       </div>
@@ -396,6 +396,26 @@
     
 </section>
 
+      <!-- 右側fixed sidebar -->
+      <section class="position-absolute position-fixed top-25 end-0 d-none d-lg-block zindex-sidebar">
+        <ul class="d-flex flex-column text-secondary-dark align-items-center">
+          <li>
+            <a href="https://www.facebook.com/" class=" btn-hover-opacity pb-2 pe-4"><i class="fab fa-facebook display-5"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-instagram display-5"></i></a>
+          </li>
+          <li>
+            <a href="https://line.me/zh-hant/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-line display-5"></i>
+            </a>
+          </li>
+          <!-- jquery : $().animate() is not a function -->
+          <li>
+            <a href="" class="btn-hover-opacity pe-4 jq-btn-backtotop"><i class="far fa-arrow-alt-circle-up display-5"></i></a>
+          </li>
+        </ul>
+      </section>
+
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
         <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
@@ -417,11 +437,12 @@
         <ul class="footer-menu">
           <li><a href=""  class="text-white d-inline-block btn-hover-opacity mb-2">課程介紹</a></li>
           <li><a href="./surroundings.html"  class="text-white d-inline-block btn-hover-opacity mb-2">瑜珈空間</a></li>
-          <li><a href=""  class="text-white d-inline-block btn-hover-opacity mb-2">當月課表</a></li>
+          <li><a href="./curriculum.html"  class="text-white d-inline-block btn-hover-opacity mb-2">當月課表</a></li><li><a href="./contact.html" class="text-white d-inline-block btn-hover-opacity ">聯絡我們</a></li>
         </ul>
         <p class="text-md-center text-white">© 2021. All Rights Reserved.</p>
       </div>
     </footer>
+    
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
