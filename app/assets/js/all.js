@@ -158,7 +158,14 @@ $(document).ready(function () {
       $('.jq-level3').toggleClass('jq-level-active');
     });
   });
- 
+  //top頁面滑動置頂效果
+  $('.jq-btn-backtotop').on('click',function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop: stop }, 1000);
+
+  }).hover(function(){
+      $(this).attr('title','top');
+  });
 
 
   
