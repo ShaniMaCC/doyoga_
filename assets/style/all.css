@@ -18655,6 +18655,10 @@ ul {
   }
 }
 
+.card-img-w {
+  width: 94px;
+}
+
 .scrollbar-light {
   overflow-x: scroll;
   background-color: white;

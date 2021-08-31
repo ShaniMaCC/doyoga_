@@ -28,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item dropdown">
               <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#">課程介紹</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,10 +54,13 @@
             <li class="nav-item">
               <a class="nav-link" href="./curriculum.html">當月課表</a>
             </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="./contact.html">聯絡我們</a>
+            </li>
           </ul>
-          <div class="d-lg-flex d-none">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-4">立即預約</a>
-            <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3">聯絡我們</a>
+          <div class="d-flex justify-content-center">
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
       </div>
@@ -220,7 +223,7 @@
                 </li>
                 <li class="swiper-slide card position-relative bg-secondary-dark p-2 mb-18 h-md-418">
                     <div class="position-absolute top-0 start-50 translate-middle border border-5 rounded-circle border-primary">
-                        <img src="./assets/images/teacher-2.png" alt="teacher Kanae" class="card-img h-94">
+                        <img src="./assets/images/teacher-2.png" alt="teacher Kanae" class="card-img card-img-w">
                     </div>
                     <div class="card-body text-white mt-8">
                         <h3 class="card-title text-center">Kanae 老師</h3>
@@ -250,7 +253,7 @@
                 </li>
                 <li class="swiper-slide card position-relative bg-secondary-dark p-2 mb-22 h-md-418">
                     <div class="position-absolute top-0 start-50 translate-middle border border-5 rounded-circle border-primary">
-                        <img src="./assets/images/teacher-3.png" alt="teacher Carol" class="card-img h-94">
+                        <img src="./assets/images/teacher-3.png" alt="teacher Carol" class="card-img card-img-w">
                     </div>
                     <div class="card-body text-white mt-8">
                         <h3 class="card-title text-center">Asa Ifrit 老師</h3>
@@ -302,25 +305,25 @@
 
 
 
-      <!-- 右側fixed sidebar -->
-      <section class="position-absolute position-fixed top-10 end-0 d-none d-lg-block zindex-sidebar">
-        <ul class="d-flex flex-column text-secondary-dark align-items-center">
-          <li>
-            <a href="https://www.facebook.com/" class=" btn-hover-opacity pb-2 pe-4"><i class="fab fa-facebook display-5"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-instagram display-5"></i></a>
-          </li>
-          <li>
-            <a href="https://line.me/zh-hant/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-line display-5"></i>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="position-absolute position-fixed bottom-0 end-0 d-lg-none zindex-sidebar">
-      <!-- 右下fixed jquery : $().animate() is not a function -->
-        <a href="" class="btn-hover-opacity pe-4 jq-btn-backtotop text-primary"><i class="far fa-arrow-alt-circle-up display-2"></i></a>
-      </section>
+    <!-- 右側fixed sidebar -->
+    <section class="position-absolute position-fixed top-10 end-0 d-none d-lg-block zindex-sidebar">
+      <ul class="d-flex flex-column text-secondary-dark align-items-center">
+        <li>
+          <a href="https://www.facebook.com/" class=" btn-hover-opacity pb-2 pe-4"><i class="fab fa-facebook display-5"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-instagram display-5"></i></a>
+        </li>
+        <li>
+          <a href="https://line.me/zh-hant/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-line display-5"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="position-absolute position-fixed bottom-0 end-0 d-lg-none zindex-sidebar">
+    <!-- 右下fixed jquery : $().animate() is not a function -->
+      <a href="" class="btn-hover-opacity pe-4 jq-btn-backtotop text-primary"><i class="far fa-arrow-alt-circle-up display-2"></i></a>
+    </section>
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">

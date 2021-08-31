@@ -28,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item dropdown">
               <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#">課程介紹</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,18 +54,21 @@
             <li class="nav-item">
               <a class="nav-link" href="./curriculum.html">當月課表</a>
             </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="./contact.html">聯絡我們</a>
+            </li>
           </ul>
-          <div class="d-lg-flex d-none">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-4">立即預約</a>
-            <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3">聯絡我們</a>
+          <div class="d-flex justify-content-center">
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <section>
-    <div class="container">
-        <h2 class="text-center text-secondary-dark fw-bolder mt-12 mt-md-16 mb-6 mb-md-8">瑜伽空間</h2>
+    <main>
+    <section class="container pt-12 pt-md-16">
+        <h2 class="text-center text-secondary-dark fw-bolder mb-6 mb-md-8">瑜伽空間</h2>
         <div class="row">
             <div class="col-md-8">
                 <div class="card mb-4 mb-lg-6">
@@ -113,7 +116,7 @@
                         </div>
                     </li>  
                 </ul>
-                 
+                    
             </div> 
             <div class="col-12 col-md-4 mb-10 ">
                 <div class="card bg-secondary">
@@ -130,97 +133,96 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- 課程推薦 swiper -->
-<section>
-    <div class="bg-secondary">
+    </section>
+    <!-- 課程推薦 swiper -->
+    <section class="bg-secondary pb-12 pb-md-13 pb-lg-14">
         <div class="container">
             <h2 class="text-center text-secondary-dark fw-bolder pb-8 pt-10">課程推薦</h2>
             <div class="swiper mySwiper-recommend">
                 <ul class="swiper-wrapper">
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman doing yoga beside wall">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">基礎 Basic</h3>
-                          <p class="card-text">授課老師：Carol Tang</p>
+                            <h3 class="card-title fw-bolder mb-0">基礎 Basic</h3>
+                            <p class="card-text">授課老師：Carol Tang</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman doing yoga">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">艾揚格 Iyengar</h3>
-                          <p class="card-text">授課老師：Kanae</p>
+                            <h3 class="card-title fw-bolder mb-0">艾揚格 Iyengar</h3>
+                            <p class="card-text">授課老師：Kanae</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman in black sports bra and black leggings doing yoga.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman in black sports bra and black leggings doing yoga">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">哈達 Hatha</h3>
-                          <p class="card-text">授課老師：Kuzuha</p>
+                            <h3 class="card-title fw-bolder mb-0">哈達 Hatha</h3>
+                            <p class="card-text">授課老師：Kuzuha</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman in white tank top and white leggings bending her body">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">寰宇 Universal</h3>
-                          <p class="card-text">授課老師：Kuzuha</p>
+                            <h3 class="card-title fw-bolder mb-0">寰宇 Universal</h3>
+                            <p class="card-text">授課老師：Kuzuha</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/two woman dong fitness exercise.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="two woman dong fitness exercise">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">雙人飛行</h3>
-                          <p class="card-text">授課老師：Kuzuha、Kanae</p>
+                            <h3 class="card-title fw-bolder mb-0">雙人飛行</h3>
+                            <p class="card-text">授課老師：Kuzuha、Kanae</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman doing yoga.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman doing yoga">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">阿斯坦加</h3>
-                          <p class="card-text">授課老師：Kanae</p>
+                            <h3 class="card-title fw-bolder mb-0">阿斯坦加</h3>
+                            <p class="card-text">授課老師：Kanae</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14 ">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman in white tank top and white pants bending her body by the window.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman in white tank top and white pants bending her body by the window">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">陰陽Yin Yang</h3>
-                          <p class="card-text">授課老師：Asa Chen</p>
+                            <h3 class="card-title fw-bolder mb-0">陰陽Yin Yang</h3>
+                            <p class="card-text">授課老師：Asa Chen</p>
                         </div>
                     </li>
-                    <li class="swiper-slide card border-0 bg-secondary mb-12 mb-md-13 mb-lg-14">
+                    <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman bending her body by the window">
                         <div class="card-body text-secondary-dark p-0">
-                          <h3 class="card-title fw-bolder mb-0">香氛 Aromna Yoga</h3>
-                          <p class="card-text">授課老師：Asa Chen</p>
+                            <h3 class="card-title fw-bolder mb-0">香氛 Aromna Yoga</h3>
+                            <p class="card-text">授課老師：Asa Chen</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
+    </section>
+</main>
 
-    </div>
-</section>
 
-      <!-- 右側fixed sidebar -->
-      <section class="position-absolute position-fixed top-10 end-0 d-none d-lg-block zindex-sidebar">
-        <ul class="d-flex flex-column text-secondary-dark align-items-center">
-          <li>
-            <a href="https://www.facebook.com/" class=" btn-hover-opacity pb-2 pe-4"><i class="fab fa-facebook display-5"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-instagram display-5"></i></a>
-          </li>
-          <li>
-            <a href="https://line.me/zh-hant/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-line display-5"></i>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="position-absolute position-fixed bottom-0 end-0 d-lg-none zindex-sidebar">
-      <!-- 右下fixed jquery : $().animate() is not a function -->
-        <a href="" class="btn-hover-opacity pe-4 jq-btn-backtotop text-primary"><i class="far fa-arrow-alt-circle-up display-2"></i></a>
-      </section>
+
+    <!-- 右側fixed sidebar -->
+    <section class="position-absolute position-fixed top-10 end-0 d-none d-lg-block zindex-sidebar">
+      <ul class="d-flex flex-column text-secondary-dark align-items-center">
+        <li>
+          <a href="https://www.facebook.com/" class=" btn-hover-opacity pb-2 pe-4"><i class="fab fa-facebook display-5"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-instagram display-5"></i></a>
+        </li>
+        <li>
+          <a href="https://line.me/zh-hant/" class="btn-hover-opacity pb-2 pe-4"><i class="fab fa-line display-5"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="position-absolute position-fixed bottom-0 end-0 d-lg-none zindex-sidebar">
+    <!-- 右下fixed jquery : $().animate() is not a function -->
+      <a href="" class="btn-hover-opacity pe-4 jq-btn-backtotop text-primary"><i class="far fa-arrow-alt-circle-up display-2"></i></a>
+    </section>
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
