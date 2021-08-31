@@ -270,6 +270,7 @@ $spacers: (
   14: $spacer * 3.5, //56px
   15: $spacer * 3.75, //60px
   16: $spacer * 4,//64px
+  18: $spacer * 4.5, //72px
   20: $spacer * 5, //80px
   22: $spacer * 5.5, //88px
   26: $spacer * 6.5, //104px
@@ -1281,9 +1282,9 @@ $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-sm:                          300px !default;
-$modal-md:                          500px !default;
-$modal-lg:                          800px !default;
+$modal-sm:                          345px;//c-300px !default;
+$modal-md:                          690px;//c-500px !default;
+$modal-lg:                          920px;//c-800px !default;
 $modal-xl:                          1140px !default;
 
 $modal-fade-transform:              translate(0, -50px) !default;

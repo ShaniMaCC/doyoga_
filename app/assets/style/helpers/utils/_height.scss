@@ -1,4 +1,10 @@
 .h-{
+    &auto{
+        height: auto;
+    }
+    &94{
+        height: 94px;
+    }
     &165{
         height: 165px;
     }
@@ -50,7 +56,9 @@
         &341{
             height: 341px;
         }
-        
+        &418{
+            height: 418px !important;
+        }
     }
 }
 
