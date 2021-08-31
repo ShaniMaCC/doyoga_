@@ -5,20 +5,20 @@ engine: ejs
 current: reservation
 
 ---
-<!-- Reservation進度條 -->
-<section>
-    <div class="text-template text-center pt-12 pt-md-16 mb-6 mb-md-4">
-        <h2>立即預約</h2>
-    </div>
-    <div class="progess text-center mb-8">
-        <button class="text-white btn btn-secondary-dark rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">選擇方案</button>
-        <button class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">填寫資料</button>
-        <button class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3 px-md-3 px-lg-12">完成預約</button>
-    </div>
-</section>
-<!-- 首頁方案選擇 -->
-<section>
-    <div class="container">
+<main>
+    <!-- Reservation進度條 因為不能點擊所以沒用a/button-->
+    <section class="text-center pt-12 pt-md-16 pb-8">
+        <div class="text-template mb-6 mb-md-4">
+            <h2>立即預約</h2>
+        </div>
+        <div class="progess">
+            <div class="text-white btn btn-secondary-dark rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">選擇方案</div>
+            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">填寫資料</div>
+            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3 px-md-3 px-lg-12">完成預約</div>
+        </div>
+    </section>
+    <!-- 首頁方案選擇 -->
+    <section class="container">
         <ul class="d-lg-flex justify-content-lg-between mb-lg-16">
             <li class="card border border-primary mb-4 mb-md-6 mb-lg-0 w-lg-32 jq-coursechoose-1">
                 <div class="row g-0">
@@ -66,85 +66,82 @@ current: reservation
                 </div> 
             </li>  
         </ul>
-    </div>
-</section>
-<!-- collapse課程階級 jQuery:hover hide click -->
-<section>
-    <div class="collapse" id="collapseclasslevel">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p class="text-center mb-4 mt-lg-40p">
-                        <i class="fas fa-caret-down fs-1"></i>
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="bg-secondary-dark pt-8 pt-lg-10 pb-12 pb-lg-16 mb-8 mb-lg-10">
+    </section>
+    <!-- collapse課程階級 jQuery:hover hide click -->
+    <section>
+        <div class="collapse" id="collapseclasslevel">
             <div class="container">
-                <h2 class="text-center text-white mb-6 mb-lg-8">選擇課程階級</h2>
-                <div class="swiper mySwiper-classlevel">
-                    <ul class="swiper-wrapper swiper-wrapper-classlevel">
-                        <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-1" role="button">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h2 class="card-title fw-bolder">基礎 Basic</h2>
-                                <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text mb-4">基礎課程<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
-                                <ul class="card-text list-style-disc">
-                                    <li class="mb-1 ms-4">入體位法動作解說</li>
-                                    <li class="mb-1 ms-4">瑜珈基礎動作、順位</li>
-                                    <li class="ms-4">適合任何階段練習者</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-2" role="button">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h2 class="card-title fw-bolder">中階 Intermediate</h2>
-                                <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text mb-4">艾揚格、哈達、寰宇<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
-                                <ul class="card-text list-style-disc">
-                                    <li class="mb-1 ms-4">刺激身體七個層次為核心</li>
-                                    <li class="mb-1 ms-4">結合流暢體位法練習、呼吸、觀想</li>
-                                    <li class="ms-4">適合半年以上練習者</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-3" role="button">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h2 class="card-title fw-bolder">高階 Advanced</h2>
-                                <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
-                            </div>
-                            <div class="card-body p-0">
-                                <p class="card-text mb-4">阿斯坦加、陰陽<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
-                                <ul class="card-text list-style-disc">
-                                    <li class="mb-1 ms-4">充分打開身體每個部位</li>
-                                    <li class="mb-1 ms-4">顯著提升力量與柔軟度</li>
-                                    <li class="ms-4">適合一年以上練習者</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-center mb-4 mt-lg-40p">
+                            <i class="fas fa-caret-down fs-1"></i>
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="bg-secondary-dark pt-8 pt-lg-10 pb-12 pb-lg-16 mb-8 mb-lg-10">
+                <div class="container">
+                    <h2 class="text-center text-white mb-6 mb-lg-8">選擇課程階級</h2>
+                    <div class="swiper mySwiper-classlevel">
+                        <ul class="swiper-wrapper swiper-wrapper-classlevel">
+                            <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-1" role="button">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="card-title fw-bolder">基礎 Basic</h2>
+                                    <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
+                                </div>
+                                <div class="card-body p-0">
+                                    <p class="card-text mb-4">基礎課程<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
+                                    <ul class="card-text list-style-disc">
+                                        <li class="mb-1 ms-4">入體位法動作解說</li>
+                                        <li class="mb-1 ms-4">瑜珈基礎動作、順位</li>
+                                        <li class="ms-4">適合任何階段練習者</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-2" role="button">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="card-title fw-bolder">中階 Intermediate</h2>
+                                    <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
+                                </div>
+                                <div class="card-body p-0">
+                                    <p class="card-text mb-4">艾揚格、哈達、寰宇<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
+                                    <ul class="card-text list-style-disc">
+                                        <li class="mb-1 ms-4">刺激身體七個層次為核心</li>
+                                        <li class="mb-1 ms-4">結合流暢體位法練習、呼吸、觀想</li>
+                                        <li class="ms-4">適合半年以上練習者</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="swiper-slide card bg-primary text-white p-6 mb-6 jq-course-level-3" role="button">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="card-title fw-bolder">高階 Advanced</h2>
+                                    <span class="align-middle"><i class="far fa-check-circle jq-fa-check-circle fs-1 text-white opacity-50"></i></span>
+                                </div>
+                                <div class="card-body p-0">
+                                    <p class="card-text mb-4">阿斯坦加、陰陽<span class="fs-5 badge rounded-pill bg-secondary-dark ms-2 px-4 py-2">60 min</span></p>
+                                    <ul class="card-text list-style-disc">
+                                        <li class="mb-1 ms-4">充分打開身體每個部位</li>
+                                        <li class="mb-1 ms-4">顯著提升力量與柔軟度</li>
+                                        <li class="ms-4">適合一年以上練習者</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-secondary-dark text-center jq-course-name">
+                <p class="mb-1">你選擇的是</p>
+                <h3 class="d-inline-block border-bottom border-2 border-primary">
+                </h3><span class="fs-3 border-bottom border-2 border-primary jq-level1 d-none">基礎</span><span class="fs-3 border-bottom border-2 border-primary jq-level2 d-none">中階</span><span class="fs-3 border-bottom border-2 border-primary jq-level3 d-none">高階</span>
+            </div>  
         </div>
-        <div class="text-secondary-dark text-center jq-course-name">
-            <p class="mb-1">你選擇的是</p>
-            <h3 class="d-inline-block border-bottom border-2 border-primary">
-            </h3><span class="fs-3 border-bottom border-2 border-primary jq-level1 d-none">基礎</span><span class="fs-3 border-bottom border-2 border-primary jq-level2 d-none">中階</span><span class="fs-3 border-bottom border-2 border-primary jq-level3 d-none">高階</span>
-        </div>  
-    </div>
-</section>
-<!-- 預約須知 -->
-<section>
-    <div class="text-template text-center mt-10 mt-md-12 mt-lg-8 mb-4">
-        <h2>預約須知</h2>
-    </div>
-    <div class="container">
+    </section>
+    <!-- 預約須知 -->
+    <section class="container pt-10 pt-md=12 pt-lg-8">
+        <div class="text-template text-center mb-4">
+            <h2>預約須知</h2>
+        </div>
         <div class="row">
             <ol class="offset-2 col-8 list-style-num mb-22 mb-md-20 mb-lg-26">
                 <li>如果有特殊體質、特殊狀況，請主動告知。</li>
@@ -153,11 +150,16 @@ current: reservation
                 <li>DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
             </ol>
         </div>
+    </section>
+
+    <!-- choose繼續預約 jQuery:mt hide-->
+    <div class="container collapse mb-22 mb-md-20 mb-lg-26" id="collapseclasslevel">
+        <div class="row justify-content-center">
+            <div class="col col-md-4 "><a href="./reservation-info.html" class="text-white btn btn-primary btn-hover-bg-secondary-dark w-100">繼續預約</a></div>
+        </div>
     </div>
-</section>
-<!-- choose繼續預約 jQuery:mt hide-->
-<div class="container collapse mb-22 mb-md-20 mb-lg-26" id="collapseclasslevel">
-    <div class="row justify-content-center">
-        <div class="col col-md-4 "><a href="./reservation-info.html" class="text-white btn btn-primary btn-hover-bg-secondary-dark w-100">繼續預約</a></div>
-    </div>
-</div>
+</main>
+
+
+
+
