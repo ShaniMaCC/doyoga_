@@ -12,10 +12,10 @@ var swiper_2 = new Swiper(".mySwiper-comment", {
   spaceBetween: 0,
   //slidesPerGroup: 1,
   grid: {
-    rows: 2,
+    rows: 3,
     fill: 'row'
   },
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: false,
   pagination: {
     el: ".swiper-pagination",
@@ -91,6 +91,29 @@ var swiper_4 = new Swiper(".mySwiper-recommend", {
       slidesPerView: 4
     }
   }
+}); //Course 師資
+
+var swiper_5 = new Swiper(".mySwiper-teacher", {
+  grid: {
+    rows: 4,
+    fill: 'row'
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false
+      },
+      loop: false,
+      spaceBetween: 30,
+      slidesPerView: 2,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
+    }
+  }
 });
 $(document).ready(function () {
   //課程選擇邊框+區塊d-none/block pc版因toggle關係先將其餘兩個disabled
@@ -156,7 +179,7 @@ $(document).ready(function () {
   $('.jq-btn-backtotop').on('click', function (event) {
     event.preventDefault();
     $('html,body').animate({
-      scrollTop: stop
+      scrollTop: 0
     }, 1000);
   }).hover(function () {
     $(this).attr('title', 'top');
