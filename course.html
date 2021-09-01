@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- swiper -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
@@ -59,7 +60,7 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4" data-aos="animate__tada">立即預約</a>
             <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
@@ -68,27 +69,27 @@
 
     <main class="pt-12 pt-md-16 pb-22 pb-md-20 pb-lg-26">
     <section class="container">
-        <div class="text-template text-center mb-6 mb-md-8">
+        <div class="text-template text-center mb-6 mb-md-8" data-aos="animate__slideInDown">
             <h2>課程介紹</h2>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <div class="col-12 col-md-6 mb-2 mb-md-0" data-aos="animate__slideInLeft">
                 <img src="./assets/images/photo-1540206276207-3af25c08abc4.jpeg" alt="excersise" class="rounded-3 h-218 h-md-341 w-100">
             </div>
-            <div class="col-12 col-md-6 mb-12 mb-md-18 mb-lg-16">
+            <div class="col-12 col-md-6 mb-12 mb-md-18 mb-lg-16" data-aos="animate__slideInRight">
                <div class="text-template">
                    <h2 class="fw-bolder">本月限定課程 - 空中瑜珈</h2>
                    <p class="text-primary mb-4">授課老師：Carol Tang<span class="text-white rounded-pill bg-secondary-dark px-4 py-1 ms-2">60 min</span></p>
                    <p class="text-secondary-dark mb-4">
                     使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>藉由地心引力的重力原理<br>鍛鍊核心肌群，舒緩脊椎壓力<br>訓練身體協調性，深層放鬆身體<br>課堂裡老師會視同學狀況安排教導倒立動作<br>對於不敢嘗試倒立的同學來說<br>藉由掛布的支持與保護<br>加上老師細心指導，讓同學能更快掌握
                    </p>
-                   <a href="./reservation.html" class="btn btn-primary text-white">立即預約</a>
+                   <a href="./reservation.html" class="btn btn-primary text-white animate__delay-1s" data-aos="animate__pulse">立即預約</a>
                </div>
             </div>
         </div>
     </section>
     <!-- 搜尋課程 -->
-    <section class="bg-primary py-5 mb-8 mb-md-10">
+    <section class="bg-primary py-5 mb-8 mb-md-10" data-aos="animate__fadeInLeft">
         <div class="container">
             <div class="row g-1">
                 <div class="col-8 col-md-5 col-lg-4">
@@ -117,9 +118,9 @@
     <!-- 課程+上課須知 -->
     <section class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-9  ">
                 <ul class="row">
-                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 " data-bs-toggle="modal" data-bs-target="#course-basic" role="button">
+                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 " data-bs-toggle="modal" data-bs-target="#course-basic" role="button" data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img h-196 rounded-3 h-196" alt="woman doing yoga beside wall">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -127,7 +128,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Carol Tang</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg" class="card-img h-196 rounded-3 h-196" alt="woman doing yoga">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -135,7 +136,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Kanae</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/woman in black sports bra and black leggings doing yoga.jpg" class="card-img h-196 rounded-3 h-196" alt="woman in black sports bra and black leggings doing yoga">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -143,7 +144,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Kuzuha</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg" class="card-img h-196 rounded-3 h-196" alt="woman in white tank top and white leggings bending her body">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -151,7 +152,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Kuzuha</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/two woman dong fitness exercise.jpg" class="card-img h-196 rounded-3 h-196" alt="two woman dong fitness exercise">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -159,7 +160,7 @@
                             <p class="card-text fs-4">授課老師：Kuzuha、Kanae</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/woman doing yoga.jpg" class="card-img h-196 rounded-3 h-196" alt="woman doing yoga">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -167,7 +168,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Kanae</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 ">
+                    <li class="col-12 col-md-6 col-lg-5 card border-0 position-relative mb-5 mb-md-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/woman in white tank top and white pants bending her body by the window.jpg" class="card-img h-196 rounded-3 h-196" alt="woman in white tank top and white pants bending her body by the window">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end ">
@@ -175,7 +176,7 @@
                             <p class="card-text fs-4 ps-6">授課老師：Asa Chen</p>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-8">
+                    <li class="col-12 col-md-6 col-lg-6 card border-0 position-relative mb-8 " data-aos="animate__pulse">
                         <span class="text-white rounded-pill bg-primary position-absolute top-0 start-10 translate-middle px-4 py-1 ms-2">60 min</span>
                         <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" class="card-img h-196 rounded-3 h-196" alt="woman bending her body by the window">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -186,7 +187,7 @@
                 </ul>
                 
             </div>
-            <div class="col-12 col-md-6 col-lg-3 text-secondary-dark">
+            <div class="col-12 col-md-6 col-lg-3 text-secondary-dark  " data-aos="animate__fadeInRight">
                 <h3 class=" mb-2">DOYOGA 上課須知：</h3>
                 <ul>
                     <li class="mb-1">請攜帶適當的瑜珈墊和一條長毛巾配合課程使用。</li>
@@ -198,14 +199,14 @@
             </div>
         </div>
     </section>
-    <hr class="mt-12 mb-8 mt-lg-16 mb-lg-10 text-secondary-dark">
+    <hr class="mt-12 mb-8 mt-lg-16 mb-lg-10 text-secondary-dark animate__delay-1s" data-aos="animate__fadeInLeft">
     <!-- 師資 -->
     <section class="container overflow-hidden">
-        <div class="text-template text-center mb-18 mb-lg-20">
+        <div class="text-template text-center mb-18 mb-lg-20 animate__delay-1s" data-aos="animate__slideInDown">
             <h2>師資介紹</h2>
         </div>
         <div class="swiper mySwiper-teacher overflow-visible">
-            <ul class="swiper-wrapper ">
+            <ul class="swiper-wrapper">
                 <li class="swiper-slide  card position-relative bg-primary p-2 mb-18 h-md-418">
                     <div class="position-absolute top-0 start-50 translate-middle border border-5 rounded-circle border-secondary-dark ">
                         <img src="./assets/images/teacher-1.png" alt="teacher Carol" class="card-img ">
@@ -271,15 +272,15 @@
     </section>
     <!-- modal for course-basic -->
     <div class="modal fade" id="course-basic" tabindex="-1" aria-labelledby="course-basic" aria-hidden="true">
-        <div class="card modal-dialog modal-dialog-centered bg-primary px-4 py-8 mx-auto px-md-6 px-lg-14">
-            <div class="modal-content bg-primary border-0">
-                <div class="modal-body ">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-primary px-4 py-8 mx-auto px-md-6 px-lg-14 border-0">
+                <div class="modal-body">
                     <div class="row justify-content-center">
                         <div class="col-6 col-md-5 col-lg-6  ratio ratio-1x1 w-50">
                             <img src="./assets/images/photo-1540206276207-3af25c08abc4.jpeg" alt="excersise" class="card-img rounded-3">
                         </div>
-                        <div class="col-12 col-md-6 card-body text-white">
-                            <h2 class="card-title fw-bolder">基礎 Basic</h2>
+                        <div class="col-12 col-md-6 text-white">
+                            <h2 class="fw-bolder">基礎 Basic</h2>
                             <p class="mb-4 mb-md-3 mb-lg-4">授課老師：Carol Tang<span class="rounded-pill bg-secondary-dark px-4 py-1 ms-2">60 min</span></p>
                             <p class="mb-4">
                             使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>藉由地心引力的重力原理<br>鍛鍊核心肌群，舒緩脊椎壓力<br>訓練身體協調性，深層放鬆身體<br>課堂裡老師會視同學狀況安排教導倒立動作<br>對於不敢嘗試倒立的同學來說<br>藉由掛布的支持與保護<br>加上老師細心指導，讓同學能更快掌握
@@ -327,8 +328,8 @@
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
-        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group w-100 w-md-50 w-lg-40">
+        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0" data-aos="animate__jello">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group w-100 w-md-50 w-lg-40" data-aos="animate__fadeInLeft">
           <input type="email" class="form-control fs-3" placeholder="輸入您的電子信箱" aria-label="enter useremail" aria-describedby="footer-input-btn">
           <button class="btn btn-primary fs-3 text-white" type="button" id="footer-input-btn">訂閱</button>
         </div>
@@ -353,7 +354,10 @@
     </footer>
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 

@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- swiper -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
@@ -59,7 +60,7 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4" data-aos="animate__tada">立即預約</a>
             <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
@@ -69,18 +70,18 @@
     <main>
     <!-- Reservation進度條 因為不能點擊所以沒用a/button-->
     <section class="text-center pt-12 pt-md-16 pb-8">
-        <div class="text-template mb-6 mb-md-4">
+        <div class="text-template mb-6 mb-md-4"  data-aos="animate__slideInDown">
             <h2>立即預約</h2>
         </div>
         <div class="progess">
-            <div class="text-white btn btn-secondary-dark rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">選擇方案</div>
-            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7">填寫資料</div>
-            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3 px-md-3 px-lg-12">完成預約</div>
+            <div class="text-white btn btn-secondary-dark rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7" data-aos="animate__lightSpeedInLeft">選擇方案</div>
+            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3  px-md-3 px-lg-12 me-4 me-md-7 animate__delay-1s" data-aos="animate__lightSpeedInLeft">填寫資料</div>
+            <div class="text-secondary-dark btn btn-secondary rounded-3 px-5 py-3 px-md-3 px-lg-12 animate__delay-2s" data-aos="animate__lightSpeedInLeft" data-aos-delay="5000" >完成預約</div>
         </div>
     </section>
     <!-- 首頁方案選擇 -->
     <section class="container">
-        <ul class="d-lg-flex justify-content-lg-between mb-lg-16">
+        <ul class="d-lg-flex justify-content-lg-between mb-lg-16 animate__delay-2s" data-aos="animate__fadeInDown" >
             <li class="card border border-primary mb-4 mb-md-6 mb-lg-0 w-lg-32 jq-coursechoose-1">
                 <div class="row g-0">
                     <div class="col-md-5 col-lg-12">
@@ -199,7 +200,7 @@
         </div>
     </section>
     <!-- 預約須知 -->
-    <section class="container pt-10 pt-md=12 pt-lg-8">
+    <section class="container pt-10 pt-md=12 pt-lg-8 animate__delay-2s" data-aos="animate__fadeInDown" >
         <div class="text-template text-center mb-4">
             <h2>預約須知</h2>
         </div>
@@ -214,7 +215,7 @@
     </section>
 
     <!-- choose繼續預約 jQuery:mt hide-->
-    <div class="container collapse mb-22 mb-md-20 mb-lg-26" id="collapseclasslevel">
+    <div class="container collapse mb-22 mb-md-20 mb-lg-26" data-aos="animate__pulse" id="collapseclasslevel">
         <div class="row justify-content-center">
             <div class="col col-md-4 "><a href="./reservation-info.html" class="text-white btn btn-primary btn-hover-bg-secondary-dark w-100">繼續預約</a></div>
         </div>
@@ -248,8 +249,8 @@
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
-        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group w-100 w-md-50 w-lg-40">
+        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0" data-aos="animate__jello">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group w-100 w-md-50 w-lg-40" data-aos="animate__fadeInLeft">
           <input type="email" class="form-control fs-3" placeholder="輸入您的電子信箱" aria-label="enter useremail" aria-describedby="footer-input-btn">
           <button class="btn btn-primary fs-3 text-white" type="button" id="footer-input-btn">訂閱</button>
         </div>
@@ -274,7 +275,10 @@
     </footer>
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 

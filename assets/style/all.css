@@ -18401,6 +18401,15 @@ fieldset:disabled .btn {
           flex-direction: row !important;
 }
 
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+  pointer-events: auto;
+}
+
 body {
   position: relative;
   font-family: var(--bs-font-sans-serif);

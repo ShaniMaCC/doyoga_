@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- swiper -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
@@ -59,7 +60,7 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4" data-aos="animate__tada">立即預約</a>
             <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
@@ -68,18 +69,18 @@
 
     <main>
     <section class="container pt-12 pt-md-16">
-        <h2 class="text-center text-secondary-dark fw-bolder mb-6 mb-md-8">瑜伽空間</h2>
+        <h2 class="text-center text-secondary-dark fw-bolder mb-6 mb-md-8" data-aos="animate__slideInDown">瑜伽空間</h2>
         <div class="row">
-            <div class="col-md-8">
-                <div class="card mb-4 mb-lg-6">
+            <div class="col-md-8  animate__delay-1s">
+                <div class="card mb-4 mb-lg-6" data-aos="animate__flipInY">
                     <img src="./assets/images/blue swimming pool near green potted plant.jpg" alt="blue swimming pool near green potted plant" class="card-img">
                     <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
                         <p class="card-title fs-24">A、B 團體課教室</p>
                         <p class="card-text">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
                     </div>
                 </div>
-                <ul class="row">
-                    <li class="col-12 col-md-6 mb-4 mb-lg-6">
+                <ul class="row"  >
+                    <li class="col-12 col-md-6 mb-4 mb-lg-6" data-aos="animate__flipInY">
                         <div class="card">
                             <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpg" alt="blue swimming pool near green potted plant" class="card-img h-350 h-md-210 h-lg-350">
                             <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -88,7 +89,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 mb-4 mb-lg-6">
+                    <li class="col-12 col-md-6 mb-4 mb-lg-6" data-aos="animate__flipInY">
                         <div class="card">
                             <img src="./assets/images/white ceramic sink near white ceramic sink.jpg" alt="white ceramic sink near white ceramic sink" class="card-img h-350 h-md-210 h-lg-350">
                             <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 mb-4 mb-md-10 mb-lg-16">
+                    <li class="col-12 col-md-6 mb-4 mb-md-10 mb-lg-16" data-aos="animate__flipInY">
                         <div class="card">
                             <img src="./assets/images/woman in black sports bra and blue denim jeans doing yoga.jpg" alt="woman in black sports bra and blue denim jeans doing yoga" class="card-img h-350 h-md-210 h-lg-350">
                             <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -106,7 +107,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="col-12 col-md-6 mb-8 mb-md-10 mb-lg-16">
+                    <li class="col-12 col-md-6 mb-8 mb-md-10 mb-lg-16" data-aos="animate__flipInY">
                         <div class="card">
                             <img src="./assets/images/sittin people beside table inside room.jpg" alt="sitting people beside table inside room" class="card-img h-350 h-md-210 h-lg-350">
                             <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
@@ -115,10 +116,9 @@
                             </div>
                         </div>
                     </li>  
-                </ul>
-                    
+                </ul>        
             </div> 
-            <div class="col-12 col-md-4 mb-10 ">
+            <div class="col-12 col-md-4 mb-10" data-aos="animate__fadeInRight">
                 <div class="card bg-secondary">
                     <div class="card-body text-secondary-dark">
                         <h3 class="card-title mb-4">DOYOGA 提供：</h3>
@@ -135,11 +135,11 @@
         </div>
     </section>
     <!-- 課程推薦 swiper -->
-    <section class="bg-secondary pb-12 pb-md-13 pb-lg-14">
+    <section class="bg-secondary pb-12 pb-md-13 pb-lg-14" >
         <div class="container">
-            <h2 class="text-center text-secondary-dark fw-bolder pb-8 pt-10">課程推薦</h2>
+            <h2 class="text-center text-secondary-dark fw-bolder pb-8 pt-10" data-aos="animate__slideInDown">課程推薦</h2>
             <div class="swiper mySwiper-recommend">
-                <ul class="swiper-wrapper">
+                <ul class="swiper-wrapper" >
                     <li class="swiper-slide card border-0 bg-secondary">
                         <img src="./assets/images/woman doing yoga beside wall.jpg" class="card-img-top mb-2 rounded-3 h-196" alt="woman doing yoga beside wall">
                         <div class="card-body text-secondary-dark p-0">
@@ -226,8 +226,8 @@
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
-        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group w-100 w-md-50 w-lg-40">
+        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0" data-aos="animate__jello">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group w-100 w-md-50 w-lg-40" data-aos="animate__fadeInLeft">
           <input type="email" class="form-control fs-3" placeholder="輸入您的電子信箱" aria-label="enter useremail" aria-describedby="footer-input-btn">
           <button class="btn btn-primary fs-3 text-white" type="button" id="footer-input-btn">訂閱</button>
         </div>
@@ -252,7 +252,10 @@
     </footer>
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 

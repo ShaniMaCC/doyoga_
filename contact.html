@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- swiper -->
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
@@ -59,7 +60,7 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center">
-            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4">立即預約</a>
+            <a href="./reservation.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 me-lg-4" data-aos="animate__tada">立即預約</a>
             <a href="./contact.html" class="btn btn-outline-secondary-dark btn-hover-white btn-hover-bg-primary rounded-3 d-none d-lg-block">聯絡我們</a>
           </div>
         </div>
@@ -68,11 +69,11 @@
 
     <main>
     <section class="container pt-12 pt-md-16 pb-22 pb-md-20 pb-lg-27">
-        <div class="text-template text-center mb-6 mb-md-8">
+        <div class="text-template text-center mb-6 mb-md-8" data-aos="animate__slideInDown">
             <h2>聯絡我們</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7" data-aos="animate__slideInLeft">
                 <div class="card mb-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117849.67653477172!2d120.24774964240206!3d22.62385324868355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e049783205c61%3A0xebaf934b04f62525!2zODAy6auY6ZuE5biC6IuT6ZuF5Y2A!5e0!3m2!1szh-TW!2stw!4v1630321801758!5m2!1szh-TW!2stw" class="h-196 h-md-323 h-lg-350 rounded-3 card-img" allowfullscreen="true" loading="lazy"></iframe>
                 </div>
@@ -87,7 +88,7 @@
                     <li>開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
                 </ol>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5" data-aos="animate__slideInRight">
                 <form action="" class="bg-secondary p-8 rounded-3">
                     <h3 class="text-secondary-dark">意見回饋&問題詢問</h3>
                     <div class="mb-4">
@@ -138,8 +139,8 @@
 
     <footer class="footer bg-secondary-dark p-8">
       <div class="container d-lg-flex justify-content-lg-between">
-        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group w-100 w-md-50 w-lg-40">
+        <p class="fs-24 text-white fw-bold w-100 w-md-50 w-lg-60 mb-2 mb-lg-0" data-aos="animate__jello">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group w-100 w-md-50 w-lg-40" data-aos="animate__fadeInLeft">
           <input type="email" class="form-control fs-3" placeholder="輸入您的電子信箱" aria-label="enter useremail" aria-describedby="footer-input-btn">
           <button class="btn btn-primary fs-3 text-white" type="button" id="footer-input-btn">訂閱</button>
         </div>
@@ -164,7 +165,10 @@
     </footer>
     
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
